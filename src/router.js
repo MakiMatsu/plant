@@ -4,6 +4,8 @@ import Home from "./views/Home.vue";
 import Chat from "./views/Chat.vue";
 import Login from "./views/Login.vue";
 import SNS from "./views/Sns.vue";
+import About from "./views/About.vue";
+import HowToGrow from "./views/HowToGrow.vue";
 
 Vue.use(Router);
 
@@ -20,8 +22,6 @@ export default new Router({
       path: "/chat",
       name: "chat",
       component: Chat
-      // component: () =>
-      //   import(/* webpackChunkName: "about" */ "./views/About.vue")
     },
     {
       path: "/login",
@@ -32,6 +32,16 @@ export default new Router({
       path: "/sns",
       name: "sns",
       component: SNS
+    },
+    {
+      path: "/about",
+      name: "about",
+      component: About
+    },
+    {
+      path: "/howtogrow",
+      name: "howtogrow",
+      component: HowToGrow
     }
   ]
 });

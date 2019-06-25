@@ -1,21 +1,18 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/chat">Chat</router-link>|
-      <router-link to="/login">Login</router-link>|
-      <router-link to="/sns">SNS</router-link>
+      <SideMenu/>
     </div>
     <router-view/>
   </div>
 </template>
 
 <script>
-// import SideMenu from "@/components/SideMenu";
+import SideMenu from "@/components/SideMenu";
 export default {
   name: "app",
   components: {
-    // SideMenu
+    SideMenu
   }
 };
 </script>
